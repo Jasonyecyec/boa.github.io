@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login-style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <main>
+        <!-- BACKGROUND  -->
+        <div class="background">
+             <!-- LOGO -->
+            <section class="header"> 
+                <a href='../index.html'>
+                    <img src="../BOA-Files/HOME/BOA-logo.png" alt="logo" >
+                </a>               
+            </section>
+
+            <!-- CONTENT -->
+            <section class="content">             
+                <div class="content-wrapper"> 
+                <!-- USERNAME,PASS,BUTTON -->
+                    <form action="../function/login-function.php" method="POST">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="password">PASSWORD:</label>
+                        <input type="password" id="password" name="password">
+
+                        <button name="submit"> LOG IN</button>
+                    </form>
+                    <!-- BREAK LINE -->
+                    <div class="second-section">                    
+                        <div class="box1"><div class="divider"></div></div>
+                        <div class="box2"><p>or</p></div>
+                        <div class="box3"><div class="divider"></div></div>
+                    </div>
+                    <!-- SIGNUP BUTTON -->
+                    <a href="signup.html" class="signup">SIGN UP</a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
