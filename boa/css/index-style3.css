@@ -1,0 +1,300 @@
+/* ----- CATEGORIES SECTION ----- */
+.categories{
+    background-color: #fffaf1;
+    font-weight: 300;
+}
+
+/* ----- CATEGORIES TITLE ----- */
+.categories .categories-title{
+    margin: 0;
+    text-align: center; 
+    font-size: 3.5rem;
+    padding-top: 10%;
+}
+
+/* ----- CATEGORIES CONTAINER ----- */
+.categories .categories-container{
+    margin:3%  auto;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6.5rem 6.5rem;   
+    padding: 4% 4%;     
+}
+
+/* ----- CLOTHES CONTAINER ----- */
+.categories .categories-container .clothes-container{
+    height: 50vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* ----- CLOTHES BUTTON A HREF----- */
+.categories .categories-container .clothes-container a{
+    color: black;
+    box-sizing: border-box;
+    padding: 0.15em 0;
+    font-size: 2.3rem;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ----- IMAGE CONTAINER -----*/
+.categories .categories-container .clothes-container .image-container{
+    box-sizing: border-box;
+    border:1px solid black;
+    overflow: hidden;
+    height: 80%;
+}
+
+.categories-product{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    margin: 0;
+}
+.categories-product:hover{
+    transform: scale(1.05);
+}
+
+
+/* ----- BACKGROUND IMAGE FOR CLOTHES ----- */
+.categories .top{
+    background-image: url("../boa-files/home/Categories/1.png");
+}
+
+.categories .polo{
+    background-image: url("../boa-files/home/Categories/2.png");
+}
+
+.categories .shirt{
+    background-image: url("../boa-files/home/Categories/3.png");
+}
+.categories .skirt{
+    background-image: url("../boa-files/home/Categories/4.png");
+}
+.categories .gym{
+    background-image: url("../boa-files/home/Categories/5.png");
+}
+.categories .dress{
+    background-image: url("../boa-files/home/Categories/6.png");
+}
+.categories .sweater{
+    background-image: url("../boa-files/home/Categories/7.png");
+}
+
+
+/* ----- BORDER HOVER ANIMATION -----   */
+.categories .categories-container .clothes-container a span{
+    display: block;
+    background-color:black;
+    transition: 0.3s ease-in-out;
+}
+
+/* ----- CREATING BORDER -----*/
+.categories .categories-container .clothes-container a span:first-child{
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+}
+
+.categories .categories-container .clothes-container a span:nth-of-type(2){
+    position: absolute;
+    height: 100%;
+    width: 0.5px;  
+}
+
+/* ----- BEFORE HOVER ----- */
+.categories .categories-container .clothes-container a span:first-child{
+    top: 0;
+    right: -100%;
+    transition-delay: 0.1s;
+}
+
+.categories .categories-container .clothes-container a span:nth-of-type(2){
+    left: 0;
+    top: -100%;
+    transition-delay: 0.2s;
+}
+
+/* ----- DURING HOVER -----*/
+.categories .categories-container .clothes-container a:hover span:first-child{
+    top: 0;
+    right: 0;
+}
+
+.categories .categories-container .clothes-container a:hover span:nth-of-type(2){
+    left: 0;
+    top: 0;
+}
+/* ----- END OF BORDER HOVER ANIMATION -----*/
+
+/* --- MORE BUTTON ---- */
+.categories .more-button{
+    background-color: ;
+    color: black;
+    box-sizing: border-box;
+    margin:auto ;
+    margin-bottom: 7rem;
+    border:0.5px solid black;
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 0.3em;
+    text-align: center;
+    width: 90%;
+    display: block;
+}
+/* ----- END OF BUTTON ----- */
+
+/* ----- BLUR BACKGROUND ----- */
+.blur-container{
+    background-color:#fffaf1 ;
+    height: 60vh;
+}  
+
+.blur-container .filler{
+    height: 10%;
+}
+
+.blur-container .blur-bg{
+    height: 90%;
+    background-image: url("../boa-files/home/blurbackground.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.blur-container .blur-bg::after{ 
+    padding: 0;
+    margin: 0;
+    content: "";   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+}
+
+.blur-container .blur-bg  .blur-img-container{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-top: 7%;
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 2;   
+    height: 50%;
+    width: 15%;
+}
+
+.blur-container .blur-bg  .blur-img-container img{
+    display: block;
+    width:100%;
+    height: 80%;
+}
+
+.blur-container .blur-bg .blur-img-container .social-container{
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blur-container .blur-bg .blur-img-container .social-container a{
+    display: inline-block;
+    height: 100%;  
+}
+
+.blur-container .blur-bg .blur-img-container .social-container img {
+    width: 90%;
+    height: 90%;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.blur-container .blur-bg .blur-img-container .social-container img:hover{
+    cursor:pointer;
+    transform: translateY(-0.2rem);
+} 
+/* ----- END OF BLUR AND SOCIALS ------ */
+
+/* ----- FOOTER ----- */
+.footer{
+    padding-top: 7%;
+    height:30vh;
+    background-color: #fffaf1;
+}
+
+.footer .footer-container{
+    margin: auto;
+    width:90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.8fr;
+    column-gap: 3%;
+}
+
+.footer .footer-container div{  
+    padding: 1.5em;
+    border: 1px solid black;
+    font-size: 1.15rem; 
+}
+
+.footer .footer-container div .upper{
+    text-transform: uppercase;
+}
+
+.footer .footer-container div a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    line-height: 1.3em;
+}
+
+.footer .footer-container div a:hover{
+    font-weight: 450;
+}
+
+.footer .footer-container div:nth-of-type(3){
+    border:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.footer .footer-container div .about-container{
+    height: 28%;
+}
+/* ----- FOOTER SIGNUP ----- */
+
+.footer .footer-container div .footer-signup{
+    border: 1px solid black;
+    text-align: center;
+    padding: 1em;
+    display: block;
+}
+
+/* ----- COPYRIGHT ----- */
+.footer .copyright{   
+    margin-top: 2%;
+    margin-left: 5%;
+}
+/* ----- END OF FOOTER -----*/
+
+
+
+
+
+
+
+
