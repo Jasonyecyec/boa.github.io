@@ -1,0 +1,94 @@
+/* ----- FOOTER ----- */
+.footer{
+    padding-top: 5%;
+    height:30vh;
+    background-color: #fffaf1;
+    margin-top: 10rem;
+    border-top: 1px solid black;
+}
+
+.footer .footer-container{
+    margin: auto;
+    width:88%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.8fr;
+    column-gap: 3%;
+}
+
+ .container{  
+    padding: 1.5em;
+    border: 1px solid black;
+    font-size: 1.15rem; 
+}
+
+.footer .footer-container div .upper{
+    text-transform: uppercase;
+}
+
+.footer .footer-container div a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    line-height: 1.3em;
+}
+
+.footer .footer-container div a:hover{
+    font-weight: 450;
+}
+
+.footer .footer-container div:nth-of-type(3){
+    border:none;
+    padding: 0;
+}
+
+.about-container{
+    /* background-color: crimson; */
+    padding: 1.5em;
+    border: 1px solid black;
+    font-size: 1.15rem; 
+}
+/* ----- FOOTER SIGNUP ----- */
+
+.contact-footer{
+    margin-top: 2rem;
+ 
+    padding: 0;
+    border: none;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+   
+}
+.contact-container{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;  
+}
+.contact-container p{
+    margin: 0;
+}
+
+.footer-ul{
+    margin: 0;
+    box-sizing: border-box;
+   /* background-color: darkmagenta; */
+    display: flex;
+    flex-direction: row;
+    
+}
+.footer-li{
+    list-style-type: none;
+    display: inline-block;
+}
+.footer-li img{
+    width: 40%;
+}
+
+/* ----- COPYRIGHT ----- */
+.footer .copyright{   
+    margin-top: 2%;
+    margin-left: 5%;
+}
+/* ----- END OF FOOTER -----*/
